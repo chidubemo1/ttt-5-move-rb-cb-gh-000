@@ -5,9 +5,11 @@ puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go?"
 
-uinput = gets.strip
-index = input_to_index(uinput)
-move(board, index)
-display_board(board)
+9.times do
+  uinput = gets.strip
+  index = input_to_index(uinput)
+  move(board, index)
+  display_board(board)
+end
 
 # Code your CLI Here
